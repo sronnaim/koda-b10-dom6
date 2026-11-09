@@ -35,7 +35,7 @@ body {
 }
 
 .glass {
-    border: 1px solid black;
+    border: 2px solid black;
     height: 70px;
     width: 60px;
     border-radius: 0 0 16px 16px;
@@ -53,4 +53,23 @@ li {
 
 [data-content="t"] {
     background-color: lightgreen;
+}
+
+:focus {
+    outline: 8px solid gold;
+}
+
+[data-selected="true"] {
+    box-shadow: 0 0 0 6px blue;
+}
+
+.picked {
+    display: inline-flex;
+    aspect-ratio: 1/1;
+    height: 60px;
+    border: 2px solid black;
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    border-radius: 1rem;
 }
