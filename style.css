@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.glass {
+    border: 1px solid black;
+    height: 70px;
+    width: 60px;
+    border-radius: 0 0 16px 16px;
+    background-color: transparent;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+[data-content="c"] {
+    background-color: sienna;
+}
+
+[data-content="t"] {
+    background-color: lightgreen;
+}
